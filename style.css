@@ -1,0 +1,28 @@
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    padding: 20px;
+    background-color: skyblue;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.propBoton{
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 30%;
+    
+
+}

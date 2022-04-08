@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="funcionesIniciales()">
+    <div class="flex-column">
+        <label for="">Usuario</label>
+        <input id="inpUsuario" type="text">
+    
+        <br>
+        
+        <label for="">Password</label>
+        <input id="inpPassword" type="password" >
+        <br>
+
+        <label for="">Foto</label>
+        <input id="inpFile"  type="file" onchange="validarFile()">
+        <br>
+        <label for="">Subir tus constancias de estudio</label>
+        <input class="invisible" id="archivoMultiple" onchange="validarMultiple()" type="file" multiple accept="application/pdf">
+        <label class="propBoton" for="archivoMultiple">Subir constancias</label>
+        <br>
+        <br>
+        <div id="constanciasLista">
+           
+        </div>
+    </div>
+
+    <button onclick="enviarDatos()">Enviar</button>
+
+
+    <script src="js.js"></script>
+</body>
+</html>
